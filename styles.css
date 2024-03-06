@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+header {
+    margin-left: 400px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    font-family: 'Supernatural Knight';
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -20px;
+}
+
+body {
+    margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('sgv/Winchesters.gif') center center no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw; /* Define a largura da página em 100% da largura da viewport */
+            height: 100vh; /* Define a altura da página em 100% da altura da viewport */
+            overflow: hidden; /* Para ocultar qualquer parte do GIF que esteja fora da tela */
+        }
+
+        .gif-container {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .gif-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+            }
+        }
+
+        
+@font-face {
+    font-family: 'Supernatural Knight';
+    src: url('/fonts/Supernatural_Knight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo, .image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.image {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    top: -20px;
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container p {
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Supernatural Knight', sans-serif;
+    height: 8vh;
+    width: 100%; /* Alteração na largura */
+    max-width: 2000px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 25px; /* Ajuste de padding */
+    background: rgba(0, 0, 0, 0.726);
+}
+
+
+
+.main {
+    margin-right: 200px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto; /* Adicionado para alinhar à direita */
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1500;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 45vw;
+        height: 92vh;
+        background: #00000060;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-radius: 10%;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
