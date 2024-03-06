@@ -21,8 +21,7 @@ header {
 .logo {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
-    font-family: 'Supernatural Knight';
-    font-size: 24px;
+        font-size: 24px;
     font-weight: bold;
     color: white;
     position: relative;
@@ -84,7 +83,7 @@ body {
         
 @font-face {
     font-family: 'Supernatural Knight';
-    src: url('/fonts/Supernatural_Knight.ttf') format('truetype');
+    src: url('Supernatural_Knight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
