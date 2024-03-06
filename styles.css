@@ -123,7 +123,7 @@ nav {
     font-family: 'Supernatural Knight', sans-serif;
     height: 8vh;
     width: 100%; /* Alteração na largura */
-    max-width: 2000px; /* Limita a largura máxima */
+    max-width: 100%; /* Limita a largura máxima */
     margin: 0 auto; /* Centraliza horizontalmente */
     position: fixed;
     top: 0;
